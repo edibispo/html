@@ -1,6 +1,6 @@
 Siga por aqui minha evolução no Html com um pouco mais de dois meses.
 ---
-Exercícios
+**Exercícios**🌐
 
 <a href="exercicios/ex001/index.html">.ex001</a>
 
