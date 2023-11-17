@@ -1,7 +1,6 @@
 Siga por aqui minha evolução no Html com um pouco mais de ✌️ meses.🦾
 ---
-**Exercícios**🌐
-
+**Exercícios**⚙️---
 <a href="exercicios/ex001/index.html">.ex001</a>👈🏾
 
 👉🏽<a href="exercicios/ex002/index.html">.ex002</a>
