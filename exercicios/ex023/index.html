@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Passion+One&family=Sriracha&display=swap');
+        @font-face {
+            font-family: 'Bitter', serif;
+            src: url('https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Passion+One&family=Sriracha&display=swap') format();
+        }
         body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         table{
             width: 700px;
             height: 500px;
-            border-collapse: collapse;
+            border-collapse:separate;
+            border-spacing: 5px;
+            overflow: hidden;
+            overflow: visible;
         }
         /*  
         ⛅  ☀️  ☁️
@@ -21,82 +29,96 @@
 
         */
         th{
-            width: 50px;
+            width: 30px;
             height: 30px;
             border: 1px solid black;
             text-align: center; 
+            font-weight: 700;
+            margin: 0px;
+            padding: 0px;
+            word-wrap: none;
         }
         td{
             width: 50px;
             height: 30px;
+            padding: 0px;
+            margin: 0px;
             border: 1px solid black;
             text-align: center;
         }
          thead .linha1{ 
             
             background-color: rgb(83, 164, 193);
-            font-weight: bolder;
+            color: black;
+            font-size: 1.5em;
+            font-weight:900;
             font-style: normal;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-transform: uppercase; 
+            font-family: 'Bitter', serif; 
                     
+        }
+        .tempo{
+            font-size: 1.5em;
         }
     </style>
     <title>Minhas tabelas no html</title>
 </head>
 <body>
     <table>
+        <caption>
+            Tabela Climática
+        </caption>
         <thead>
+            
             <tr class="linha1">
-                <th>DIA</th>
-                <th>TEMPO</th>
-                <th>MINÍMA</th>
-                <th>MÁXIMA</th>
+                <th scope="col">DIA</th>
+                <th scope="col">TEMPO</th>
+                <th scope="col">MINÍMA</th>
+                <th scope="col">MÁXIMA</th>
              </tr>
         </thead>
         <tbody>
             <tr class="domingo">
-                <td class="dia">   </td>
-                <td class="tempo">   </td>
-                <td class="minima">   </td>
-                <td class="maxima">   </td>
+                <td class="dia"> Domingo </td>
+                <td class="tempo">  ⛅ </td>
+                <td class="minima">27º </td>
+                <td class="maxima">32º</td>
             </tr>
             <tr class="segunda">
-                <td class="dia"></td>
-                <td class="tempo"></td>
-                <td class="minima"></td>
-                <td class="maxima"></td>
+                <td class="dia">Segunda</td>
+                <td class="tempo">☀️ </td>
+                <td class="minima">27º</td>
+                <td class="maxima">32º</td>
             </tr>
             <tr class="terça">
-                <td class="dia"></td>
-                <td class="tempo"></td>
-                <td class="minima"></td>
-                <td class="maxima"></td>
+                <td class="dia">Terça</td>
+                <td class="tempo">🌦️ </td>
+                <td class="minima">27º</td>
+                <td class="maxima">32º</td>
             </tr>
             <tr class="quarta">
-                <td class="dia"></td>
-                <td class="tempo"></td>
-                <td class="minima"></td>
-                <td class="maxima"></td>
+                <td class="dia">Quarta</td>
+                <td class="tempo">🌩️</td>
+                <td class="minima">27º</td>
+                <td class="maxima">32º</td>
 
             </tr>
             <tr class="quinta">
-                <td class="dia"></td>
-                <td class="tempo"></td>
-                <td class="minima"></td>
-                <td class="maxima"></td>
+                <td class="dia">Quinta</td>
+                <td class="tempo">💨☀️ </td>
+                <td class="minima">27º</td>
+                <td class="maxima">32º</td>
             </tr>
             <tr class="sexta">
-                <td class="dia"></td>
-                <td class="tempo"></td>
-                <td class="minima"></td>
-                <td class="maxima"></td>
+                <td class="dia">Sexta</td>
+                <td class="tempo">☁️</td>
+                <td class="minima">27º</td>
+                <td class="maxima">32º</td>
             </tr>
             <tr class="sabado">
-                <td class="dia"></td>
-                <td class="tempo"></td>
-                <td class="minima"></td>
-                <td class="maxima"></td>
+                <td class="dia">Sábado</td>
+                <td class="tempo">⛅</td>
+                <td class="minima">27º</td>
+                <td class="maxima">32º</td>
             </tr>
         </th>
         </tbody>
