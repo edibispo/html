@@ -25,7 +25,7 @@
             width: 200px;
         }
         .titulos{
-            font-weight: 800;
+            font-weight: 900;
             text-align: center;
         }
         .grupo{
@@ -37,15 +37,16 @@
 <body>
     <Table>
 
-        <tr class="titulos">
-            <td>Grupo</td>
-            <td class="nome">Nomes</td>            
-            <td colspan="4">Filmes</td>
+        <div class="titulos">
+
+            <th scope="col">Grupo</th>
+            <th class="nome" scope="col">Nomes</th>            
+            <th colspan="4" scope="colgroup">Filmes</th>
             
-        </tr>
+        </div>
         <tr>
             <th
-             rowspan="3" class="grupo">Mulheres</th
+             rowspan="3" class="grupo" scope="rowgroup">Mulheres</th
                 >
             <td class="nome">Ana Maria Santos</td>
             <td>Alien</td>
@@ -68,7 +69,7 @@
         </tr>
         <tr>
             <th
-             rowspan="3" class="grupo">Homens</th
+             rowspan="3" class="grupo" scope="rowgroup">Homens</th
                 >
             <td class="nome">Bruno Mendonça</td>
             <td>Intocacáveis</td>
@@ -87,6 +88,8 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        <th colspan="4" scope="row">total</th>
+        <td>015</td>
     </Table>
 </body>
 </html>
